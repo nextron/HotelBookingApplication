@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="193dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/adminActionHotelName"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Hotel Name"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/adminActionCheckIn"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="CheckIn"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adminActionHotelName" />
+
+        <TextView
+            android:id="@+id/adminActionCheckOut"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="CheckOut"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adminActionCheckIn" />
+
+        <TextView
+            android:id="@+id/adminActionRooms"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Rooms"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/adminActionHotelName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/adminActionGuests"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="12dp"
+            android:text="Guests"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/adminActionCheckIn"
+            app:layout_constraintTop_toBottomOf="@+id/adminActionRooms" />
+
+        <Button
+            android:id="@+id/btnAdminActionApprove"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="14dp"
+            android:text="Approve"
+            android:textColor="@color/teal_700"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/adminActionCheckOut" />
+
+        <Button
+            android:id="@+id/btnAdminActionReject"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="46dp"
+            android:text="Reject"
+            android:textColor="#B65454"
+            app:layout_constraintStart_toEndOf="@+id/btnAdminActionApprove"
+            app:layout_constraintTop_toBottomOf="@+id/adminActionGuests" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

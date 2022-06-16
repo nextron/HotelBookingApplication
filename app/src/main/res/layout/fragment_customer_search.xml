@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Customer.CustomerSearchFragment">
+
+
+    <ImageView
+        android:id="@+id/imgCustSearchCheckOut"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/ic_baseline_calendar_today_24"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/edtCustSearchSearch" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="28dp"
+        android:text="Check-Out Date"
+        app:layout_constraintStart_toEndOf="@+id/imgCustSearchCheckOut"
+        app:layout_constraintTop_toBottomOf="@+id/edtCustSearchSearch" />
+
+    <TextView
+        android:id="@+id/txvCustSearchCheckOut"
+        android:layout_width="97dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imgCustSearchCheckOut"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <EditText
+        android:id="@+id/edtCustSearchSearch"
+        android:layout_width="325dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="43dp"
+        android:drawableStart="@drawable/ic_baseline_location_on_24"
+        android:ems="10"
+        android:hint="City/Area/Hotel Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imgCustSearchCheckIn"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/ic_baseline_calendar_today_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCustSearchSearch" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="28dp"
+        android:text="Check-IN Date"
+        app:layout_constraintStart_toEndOf="@+id/imgCustSearchCheckIn"
+        app:layout_constraintTop_toBottomOf="@+id/edtCustSearchSearch" />
+
+    <TextView
+        android:id="@+id/txvCustSearchCheckIn"
+        android:layout_width="88dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imgCustSearchCheckIn"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="29dp"
+        android:text="Rooms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvCustSearchCheckIn" />
+
+    <ImageView
+        android:id="@+id/imgCustSearchAddGuest"
+        android:layout_width="34dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="58dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintStart_toEndOf="@+id/txvCustSearchGuests"
+        app:layout_constraintTop_toBottomOf="@+id/txvCustSearchCheckOut" />
+
+    <Button
+        android:id="@+id/btnCustSearchSearch"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="160dp"
+        android:text="Search"
+        android:textColor="@color/button_text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCustSearchAddRooms" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="31dp"
+        android:text="Guests"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/txvCustSearchCheckOut" />
+
+    <ImageView
+        android:id="@+id/imgCustSearchMinusGuest"
+        android:layout_width="34dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="58dp"
+        android:src="@drawable/ic_baseline_horizontal_rule_24"
+        app:layout_constraintStart_toEndOf="@+id/imgCustSearchAddRooms"
+        app:layout_constraintTop_toBottomOf="@+id/txvCustSearchCheckOut" />
+
+    <ImageView
+        android:id="@+id/imgCustSearchMinusRooms"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="62dp"
+        android:src="@drawable/ic_baseline_horizontal_rule_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCustSearchCheckIn" />
+
+    <TextView
+        android:id="@+id/txvCustSearchGuests"
+        android:layout_width="34dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imgCustSearchMinusGuest"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/txvCustSearchRooms"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="9dp"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imgCustSearchMinusRooms"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <ImageView
+        android:id="@+id/imgCustSearchAddRooms"
+        android:layout_width="34dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintStart_toEndOf="@+id/txvCustSearchRooms"
+        app:layout_constraintTop_toBottomOf="@+id/txvCustSearchCheckIn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

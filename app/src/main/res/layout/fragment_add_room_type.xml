@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Hotel.AddRoomTypeFragment">
+
+        <Button
+            android:id="@+id/btnHotelAddRoomAddRoom"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="38dp"
+            android:text="Add Type"
+            android:textColor="@color/button_text_color"
+            app:layout_constraintStart_toEndOf="@+id/btnHotelAddRoomSave"
+            app:layout_constraintTop_toBottomOf="@+id/imgHotelAddRoomHotelImage" />
+
+        <EditText
+            android:id="@+id/edtHotelAddRoomHotelName"
+            android:layout_width="271dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Spinner
+            android:id="@+id/spHotelAddRoomAmenities"
+            android:layout_width="269dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/edtHotelAddRoomCity"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/edtHotelAddRoomCity"
+            android:layout_width="269dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="31dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/edtHotelAddRoomHotelName"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/txvHotelAddRoomListOfAmenities"
+            android:layout_width="270dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="35dp"
+            android:textColor="#323232"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spHotelAddRoomAmenities" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="75dp"
+            android:text="Hotel Name:"
+            android:textColor="#323232"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="130dp"
+            android:text="Image:"
+            android:textColor="#323232"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="79dp"
+            android:text="City:"
+            android:textColor="#323232"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="75dp"
+            android:text="Amenities:"
+            android:textColor="#323232"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgHotelAddRoomHotelImage"
+            android:layout_width="251dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/txvHotelAddRoomListOfAmenities"
+            app:shapeAppearanceOverlay="@style/roundImage"
+            app:srcCompat="@drawable/ic_baseline_home_24" />
+
+        <Button
+            android:id="@+id/btnHotelAddRoomSave"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="139dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="53dp"
+            android:text="Save"
+            android:textColor="@color/button_text_color"
+            app:layout_constraintEnd_toStartOf="@+id/btnHotelAddRoomAddRoom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgHotelAddRoomHotelImage" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHotelAddRoomList"
+            android:layout_width="401dp"
+            android:layout_height="429dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="19dp"
+            android:text="List of active room types:"
+            android:textColor="#323232"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnHotelAddRoomSave" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="154dp"
+            android:layout_marginTop="16dp"
+            android:text="Hotel Details:"
+            android:textColor="#323232"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgHotelAddRoomHotelImageSelect"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/ic_baseline_image_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgHotelAddRoomHotelImage"
+            app:layout_constraintTop_toBottomOf="@+id/txvHotelAddRoomListOfAmenities" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="389dp"
+    android:layout_height="270dp"
+    android:layout_margin="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customerOrderDialog"
+    app:cardCornerRadius="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/custOrderAmount"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="109dp"
+            android:layout_marginTop="20dp"
+            android:text="Order Amount:"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custOrderGuests" />
+
+        <TextView
+            android:id="@+id/custOrderHotelName"
+            android:layout_width="180dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="34dp"
+            android:text="Hotel Name"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/custOrderCheckIn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/custOrderCheckIn"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="22dp"
+            android:text="CheckIn"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/custOrderGuests"
+            app:layout_constraintTop_toBottomOf="@+id/custOrderHotelName" />
+
+        <TextView
+            android:id="@+id/custOrderCheckOut"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="42dp"
+            android:text="CheckOut"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/custOrderCheckIn"
+            app:layout_constraintStart_toStartOf="@+id/custOrderRooms"
+            app:layout_constraintTop_toBottomOf="@+id/imgCustOrderCloseDIalog" />
+
+        <TextView
+            android:id="@+id/custOrderRooms"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="21dp"
+            android:text="Rooms"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/custOrderGuests"
+            app:layout_constraintTop_toBottomOf="@+id/custOrderCheckOut" />
+
+        <TextView
+            android:id="@+id/custOrderGuests"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="22dp"
+            android:text="Guests"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/custOrderRooms"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custOrderCheckIn" />
+
+        <Button
+            android:id="@+id/btnCustOrderCancel"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="25dp"
+            android:text="Cancel Order"
+            android:textColor="#B65454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custOrderAmount" />
+
+        <ImageView
+            android:id="@+id/imgCustOrderCloseDIalog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="349dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
